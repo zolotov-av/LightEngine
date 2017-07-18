@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<formset name="document">
+	
+	<typedef name="id" basetype="integer" widget="hidden" />
+	<typedef name="name" basetype="string" widget="text" min-length="1" max-length="80" title="document:doc_name" />
+	<typedef name="title" basetype="string" widget="text" min-length="1" max-length="400" title="document:doc_title" />
+	<typedef name="content" basetype="string" widget="bbedit" max-length="4000" title="document:doc_content" />
+	
+	<form url="/tests/forms.php" action="create" check="sid" title="document:new_document">
+		<param name="name" type="document.name" />
+		<param name="title" type="document.title" />
+		<param name="content" type="document.content" />
+		<submit name="save" title="std:save" />
+	</form>
+	
+</formset>
