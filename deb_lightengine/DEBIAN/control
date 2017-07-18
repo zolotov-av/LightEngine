@@ -1,0 +1,8 @@
+Package: lightengine
+Version: 1.1
+Section: misc
+Source: lightengine
+Architecture: all
+Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
+Priority: extra
+Description: lightweight engine for web-applications
